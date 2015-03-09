@@ -1,0 +1,10 @@
+Dear Sir or Madam,
+
+I would like to be considered for this software engineering internship. I meet many of the listed preferred qualifications: I know Java and Python very well and have a little experience with C++. I've recently been introduced to competitive programming, which has taught me a lot about algorithms and problem-solving in general. I have some experience with Linux, but only as an end-user and not as a software developer.
+
+I have a big interest in machine learning and would love to learn more, especially to see how it can be applied to the huge amounts of data Google has access to.
+
+Thank you very much for considering my application.
+
+Yours faithfully,
+Felix Chapman
