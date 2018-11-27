@@ -1,0 +1,197 @@
+{
+  "basics": {
+    "name": "Felix Chapman",
+    "label": "Software Developer",
+    "picture": "",
+    "email": "aelred717@gmail.com",
+    "phone": "07977 871939",
+    "website": "http://ael.red",
+    "summary": "I recently graduated from Southampton Unversity with a first class MEng in\nComputer Science. I achieved marks in the top 10% in my first and second year.\nI have a strong interest in computer science, programming and machine learning.\nI have experience with  several programming languages and am quick to\nunderstand and use new ones.\n",
+    "location": {
+      "address": "Wayside Cottage\nBurnetts Lane\nBaltonsborough",
+      "postalCode": "BA6 8RD",
+      "city": "Glastonbury",
+      "countryCode": "UK",
+      "region": "Somerset"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "aelred",
+        "url": "http://github.com/aelred"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Electronics and Computer Science, University of Southampton",
+      "position": "Intern",
+      "startDate": "2014-06-01",
+      "endDate": "2014-09-01",
+      "summary": "ECS Internship program applying machine learning to plant data",
+      "highlights": [
+        "Worked with data from the PLEASED (http://pleased-fp7.eu/) project",
+        "Performed classification on electrical signals from plants in response to stimulus",
+        "Used machine learning techniques such as linear discriminant analysis and source separation"
+      ]
+    },
+    {
+      "company": "Mrs. Helsby",
+      "position": "Database administrator and application developer",
+      "startDate": "2011-11-01",
+      "endDate": "2011-12-01",
+      "summary": "Developed a database to manage the availability and pricing of two houses",
+      "highlights": [
+        "Developed in Microsoft Access using SQL statements and VB scripts",
+        "Created a GUI that was easy for the end-user to understand and use"
+      ]
+    },
+    {
+      "company": "C&J Clark International",
+      "position": "Work experience student, IT",
+      "startDate": "2007-01-01",
+      "endDate": "2007-01-01",
+      "summary": "One week school-arranged work experience",
+      "highlights": [
+        "Basic IT skills: entering data, working with people across time zones",
+        "Team-based activities"
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "University of Southampton",
+      "area": "Computer Science",
+      "studyType": "MEng",
+      "startDate": "2011-01-01",
+      "endDate": "2015-01-01",
+      "courses": [
+        "TODO",
+        "with First Class Honours"
+      ]
+    },
+    {
+      "institution": "Strode College, Street",
+      "studyType": "A Levels",
+      "startDate": "2009-01-01",
+      "endDate": "2011-01-01",
+      "courses": [
+        "Computing (A*)",
+        "Mathematics (A*)",
+        "Physics (A)",
+        "Music (D)",
+        "TODO",
+        "Additional achievements College Ensemble, Jazz Group, Managing Personal Finance Award"
+      ]
+    },
+    {
+      "institution": "St. Dunstan's Community School, Glastonbury",
+      "studyType": "GCSEs",
+      "startDate": "2004-01-01",
+      "endDate": "2009-01-01",
+      "courses": [
+        "Mathematics (A*)",
+        "Science (A*)",
+        "Additional Science (A)",
+        "English Language (A)",
+        "English Literature (A)",
+        "French (A*)",
+        "History (A)",
+        "Music (A)",
+        "Art and Design (C)"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Zepler Scholarship",
+      "date": "2012-01-01",
+      "awarder": "Electronics and Computer Science, University of Southampton",
+      "summary": "Awarded for outstanding achievement in second year"
+    },
+    {
+      "title": "Zepler Scholarship",
+      "date": "2011-01-01",
+      "awarder": "Electronics and Computer Science, University of Southampton",
+      "summary": "Awarded for outstanding achievement in first year"
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Python",
+      "level": "Advanced"
+    },
+    {
+      "name": "Java",
+      "level": "Advanced"
+    },
+    {
+      "name": "JavaScript",
+      "level": "Beginner"
+    },
+    {
+      "name": "C#",
+      "level": "Beginner"
+    },
+    {
+      "name": "C",
+      "level": "Beginner"
+    },
+    {
+      "name": "Haskell",
+      "level": "Beginner"
+    },
+    {
+      "name": "Visual Basic",
+      "level": "Beginner"
+    },
+    {
+      "name": "Machine learning",
+      "level": "Beginner"
+    },
+    {
+      "name": "Computer skills",
+      "keywords": [
+        "Windows",
+        "Linux",
+        "Microsoft Office"
+      ],
+      "level": "Advanced"
+    },
+    {
+      "name": "TODO",
+      "level": "Interest and ability to learn further languages, good understanding and application of mathematics"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Piano",
+      "keywords": [
+        "Classical",
+        "Jazz",
+        "Grade 8"
+      ]
+    },
+    {
+      "name": "Video games",
+      "keywords": [
+        "Game development"
+      ]
+    },
+    {
+      "name": "Programming problems",
+      "keywords": [
+        "Project Euler"
+      ]
+    }
+  ],
+  "references": []
+}
