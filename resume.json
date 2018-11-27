@@ -4,11 +4,11 @@
     "label": "Software Developer",
     "picture": "",
     "email": "aelred717@gmail.com",
-    "phone": "07977 871939",
+    "phone": "+44 7977 871939",
     "website": "http://ael.red",
     "summary": "I recently graduated from Southampton Unversity with a first class MEng in\nComputer Science. I achieved marks in the top 10% in my first and second year.\nI have a strong interest in computer science, programming and machine learning.\nI have experience with  several programming languages and am quick to\nunderstand and use new ones.\n",
     "location": {
-      "address": "Wayside Cottage\nBurnetts Lane\nBaltonsborough",
+      "address": "Wayside Cottage,\nBurnetts Lane",
       "postalCode": "BA6 8RD",
       "city": "Glastonbury",
       "countryCode": "UK",
@@ -24,10 +24,11 @@
   },
   "work": [
     {
-      "company": "Electronics and Computer Science, University of Southampton",
+      "company": "ECS, University of Southampton",
+      "website": "https://www.ecs.soton.ac.uk/",
       "position": "Intern",
-      "startDate": "2014-06-01",
-      "endDate": "2014-09-01",
+      "startDate": "2014-06-16",
+      "endDate": "2014-09-16",
       "summary": "ECS Internship program applying machine learning to plant data",
       "highlights": [
         "Worked with data from the PLEASED (http://pleased-fp7.eu/) project",
@@ -39,7 +40,7 @@
       "company": "Mrs. Helsby",
       "position": "Database administrator and application developer",
       "startDate": "2011-11-01",
-      "endDate": "2011-12-01",
+      "endDate": "2011-11-30",
       "summary": "Developed a database to manage the availability and pricing of two houses",
       "highlights": [
         "Developed in Microsoft Access using SQL statements and VB scripts",
@@ -49,8 +50,8 @@
     {
       "company": "C&J Clark International",
       "position": "Work experience student, IT",
-      "startDate": "2007-01-01",
-      "endDate": "2007-01-01",
+      "startDate": "2007-01-08",
+      "endDate": "2007-01-12",
       "summary": "One week school-arranged work experience",
       "highlights": [
         "Basic IT skills: entering data, working with people across time zones",
@@ -64,8 +65,8 @@
       "institution": "University of Southampton",
       "area": "Computer Science",
       "studyType": "MEng",
-      "startDate": "2011-01-01",
-      "endDate": "2015-01-01",
+      "startDate": "2011-09-01",
+      "endDate": "2015-09-01",
       "courses": [
         "TODO",
         "with First Class Honours"
@@ -74,8 +75,8 @@
     {
       "institution": "Strode College, Street",
       "studyType": "A Levels",
-      "startDate": "2009-01-01",
-      "endDate": "2011-01-01",
+      "startDate": "2009-09-01",
+      "endDate": "2011-09-01",
       "courses": [
         "Computing (A*)",
         "Mathematics (A*)",
@@ -88,8 +89,8 @@
     {
       "institution": "St. Dunstan's Community School, Glastonbury",
       "studyType": "GCSEs",
-      "startDate": "2004-01-01",
-      "endDate": "2009-01-01",
+      "startDate": "2004-09-01",
+      "endDate": "2009-09-01",
       "courses": [
         "Mathematics (A*)",
         "Science (A*)",
@@ -106,16 +107,16 @@
   "awards": [
     {
       "title": "Zepler Scholarship",
-      "date": "2012-01-01",
+      "date": "2013-01-01",
       "awarder": "Electronics and Computer Science, University of Southampton",
       "summary": "Awarded for outstanding achievement in second year"
     },
     {
       "title": "Zepler Scholarship",
-      "date": "2011-01-01",
+      "date": "2012-01-01",
       "awarder": "Electronics and Computer Science, University of Southampton",
       "summary": "Awarded for outstanding achievement in first year"
-    }
+    },
   ],
   "publications": [],
   "skills": [
@@ -152,6 +153,10 @@
       "level": "Beginner"
     },
     {
+      "name": "Mathematics",
+      "level": "Intermediate"
+    },
+    {
       "name": "Computer skills",
       "keywords": [
         "Windows",
@@ -159,10 +164,6 @@
         "Microsoft Office"
       ],
       "level": "Advanced"
-    },
-    {
-      "name": "TODO",
-      "level": "Interest and ability to learn further languages, good understanding and application of mathematics"
     }
   ],
   "languages": [
