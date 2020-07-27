@@ -28,6 +28,12 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: cv_pdf
+      - name: Extract branch name
+        shell: bash
+        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+        id: extract_branch
+      - name: Rename pdf to branch name
+        run: mv cv_felix_chapman.pdf ${{ steps.extract_branch.outputs.branch }}.pdf
       - name: Publish cv
         uses: appleboy/scp-action@v0.1.1
         with:
@@ -35,4 +41,4 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
           source: cv_felix_chapman.pdf
-          target: /var/www/cv.ael.red/${GITHUB_REF##*/}.pdf
+          target: /var/www/cv.ael.red/${{ steps.extract_branch.outputs.branch }}.pdf
