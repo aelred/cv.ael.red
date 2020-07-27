@@ -35,4 +35,4 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
           source: cv_felix_chapman.pdf
-          target: /var/www/cv.ael.red/${{ github.ref }}.pdf
+          target: /var/www/cv.ael.red/${GITHUB_REF##*/}.pdf
