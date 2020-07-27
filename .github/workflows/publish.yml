@@ -1,0 +1,44 @@
+on:
+  push:
+    branches: [ '*' ]
+    
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Install texlive
+      run: sudo apt-get install texlive
+    - uses: actions/checkout@v2
+    - name: Build pdf
+      run: pdflatex cv_felix_chapman.tex
+    - name: Upload cv pdf
+      uses: actions/upload-artifact@v2
+      with:
+        name: cv_pdf
+        path: cv_felix_chapman.pdf
+        
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Download cv pdf
+        uses: actions/download-artifact@v2
+        with:
+          name: cv_pdf
+      - name: Extract branch name
+        shell: bash
+        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+        id: extract_branch
+      - name: Rename pdf to branch name
+        run: mv cv_felix_chapman.pdf ${{ steps.extract_branch.outputs.branch }}.pdf
+      - name: Publish cv
+        uses: appleboy/scp-action@v0.1.1
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
+          source: ${{ steps.extract_branch.outputs.branch }}.pdf
+          target: /var/www/cv.ael.red
