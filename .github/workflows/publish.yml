@@ -12,7 +12,7 @@ jobs:
       run: sudo apt-get install texlive
     - uses: actions/checkout@v2
     - name: Build pdf
-      run: pdftex cv_felix_chapman.tex
+      run: pdflatex cv_felix_chapman.tex
     - name: Upload cv pdf
       uses: actions/upload-artifact@v2
       with:
