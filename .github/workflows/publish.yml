@@ -29,7 +29,7 @@ jobs:
         with:
           name: cv_pdf
       - name: Publish cv
-        uses: appleboy/scp-action@v0.0.1
+        uses: appleboy/scp-action@v0.1.1
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
