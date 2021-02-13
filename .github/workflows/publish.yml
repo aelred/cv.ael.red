@@ -9,7 +9,7 @@ jobs:
 
     steps:
     - name: Install texlive
-      run: sudo apt-get install texlive
+      run: sudo apt-get install texlive texlive-latex-extra
     - uses: actions/checkout@v2
     - name: Build pdf
       run: pdflatex cv_felix_chapman.tex
