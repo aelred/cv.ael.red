@@ -9,7 +9,7 @@ jobs:
 
     steps:
     - name: Install texlive
-      run: sudo apt-get install texlive
+      run: sudo apt-get install texlive texlive-latex-extra
     - uses: actions/checkout@v2
     - name: Build pdf
       run: pdflatex cv_felix_chapman.tex
@@ -19,7 +19,7 @@ jobs:
         name: cv_pdf
         path: cv_felix_chapman.pdf
         
-  publish:
+  publish-to-server:
     needs: build
     runs-on: ubuntu-latest
     
@@ -34,7 +34,7 @@ jobs:
         id: extract_branch
       - name: Rename pdf to branch name
         run: mv cv_felix_chapman.pdf ${{ steps.extract_branch.outputs.branch }}.pdf
-      - name: Publish cv
+      - name: Publish CV to server
         uses: appleboy/scp-action@v0.1.1
         with:
           host: ${{ secrets.HOST }}
@@ -42,3 +42,25 @@ jobs:
           key: ${{ secrets.KEY }}
           source: ${{ steps.extract_branch.outputs.branch }}.pdf
           target: /var/www/cv.ael.red
+
+  publish-to-s3:
+    needs: build
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Download cv pdf
+        uses: actions/download-artifact@v2
+        with:
+          name: cv_pdf
+      - name: Extract branch name
+        shell: bash
+        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+        id: extract_branch
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+      - name: Publish CV to S3
+        run: aws s3 cp cv_felix_chapman.pdf s3://${{ secrets.CV_BUCKET }}/${{ steps.extract_branch.outputs.branch }}.pdf
