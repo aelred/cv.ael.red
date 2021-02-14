@@ -79,6 +79,8 @@ jobs:
         shell: bash
         run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
         id: extract_branch
+      - name: Rename CV
+        run: mv public/cv_felix_chapman.pdf public/${{ steps.extract_branch.outputs.branch }}.pdf
       - name: Deploy to Github Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
