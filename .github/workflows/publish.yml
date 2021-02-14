@@ -64,3 +64,25 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
       - name: Publish CV to S3
         run: aws s3 cp cv_felix_chapman.pdf s3://${{ secrets.STATIC_SITE_BUCKET }}/${{ steps.extract_branch.outputs.branch }}.pdf
+        
+  publish-to-github-pages:
+    needs: build
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Download cv pdf
+        uses: actions/download-artifact@v2
+        with:
+          name: cv_pdf
+          path: ./public
+      - name: Extract branch name
+        shell: bash
+        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+        id: extract_branch
+      - name: Rename CV
+        run: mv public/cv_felix_chapman.pdf public/${{ steps.extract_branch.outputs.branch }}.pdf
+      - name: Deploy to Github Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          keep_files: true
