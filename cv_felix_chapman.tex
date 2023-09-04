@@ -14,16 +14,14 @@
 
 \address{
 \begin{minipage}[t]{0.25\textwidth}
-Wayside Cottage \\
-Burnetts Lane \\
-Glastonbury \\
-BA6 8RD
+London \\
+United Kingdom
 \end{minipage}
 \begin{minipage}[t]{0.25\textwidth}
 +44 7977 871939 \\
-\href{http://ael.red/}{http://ael.red/} \\
+\href{https://ael.red/}{https://ael.red/} \\
 \href{mailto:aelred717@gmail.com}{aelred717@gmail.com} \\
-\href{http://www.github.com/aelred}{github.com/aelred}
+\href{https://www.github.com/aelred}{github.com/aelred}
 \vspace{0.1in} \\
 \end{minipage}
 }
@@ -36,13 +34,43 @@ A motivated, skilled software developer with experience in backend development p
 
 \section{EXPERIENCE}
 
+\normalsize{\section{2023}}
+{\bf Babylon Health} (\href{https://www.babylonhealth.com/}{https://www.babylonhealth.com}) \\
+Senior Software Engineer
+
+\begin{itemize}
+
+\item
+Designed and developed data ingestion pipelines using Python to extract partner's healthcare data, transform it into our internal standardised format and load it into our Health Graph, enabling crucial analytics use cases.
+
+\end{itemize}
+
+\normalsize{\section{2019 - 2023}}
+{\bf Babylon Health} (\href{https://www.babylonhealth.com/}{https://www.babylonhealth.com}) \\
+Software Engineer
+\begin{itemize}
+
+\item
+Developed Health Graph, a unified view of our healthcare data, which reads events from Kafka, writes them to Elasticsearch and exposes them as BigQuery tables and in a standard healthcare data format (FHIR) with a GraphQL API.
+
+\item
+Supported several teams to integrate with Health Graph, coaching developers and clinicians on how to write schemas and how to publish healthcare data events until they were able to do this themselves.
+
+\item
+Designed and developed a "self-serve" approach for teams to publish new data types to Health Graph, including publishing new schemas which are automatically pushed to S3, transformed into protobuf and made available in Health Graph.
+
+\item
+Created What the Fox, an internal Slack tool written in Scala for looking up acronyms and jargon. Anyone can contribute terms and the tool tracks frequently requested terms.
+
+\end{itemize}
+
 \normalsize{\section{2015 - 2018}}
-{\bf Grakn Labs} (\href{http://grakn.ai/}{http://grakn.ai/}) \\
+{\bf Vaticle} (formerly Grakn Labs, \href{https://typedb.com/}{https://typedb.com/}) \\
 Core Developer
 \begin{itemize}
 
 \item
-Created Graql (\href{https://github.com/aelred/grakn}{https://github.com/aelred/grakn}), a declarative pattern-based query language that operates on the Grakn knowledge graph, implemented in Java, using Tinkerpop and ANTLR.
+Created TypeQL (formerly Graql, \href{https://typedb.com/docs/typeql/2.x/overview.html}{https://typedb.com/docs/typeql/2.x/overview.html}), a declarative pattern-based query language that operates on the TypeDB (formerly Grakn) graph database, implemented in Java, using Tinkerpop and ANTLR.
 
 \item
 Achieved remote query execution using protocol buffers and gRPC to stream results over HTTP. I implemented remote clients in Java, Python and Haskell.
@@ -60,7 +88,7 @@ Helped implement company processes such as code reviews and automated testing us
 
 \normalsize{\section{2014}}
 {\bf University of Southampton} \\
-Internship, PLEASED project (\href{http://pleased-fp7.eu/}{http://pleased-fp7.eu/})
+Internship, PLEASED project
 
 \begin{itemize}
 
@@ -75,13 +103,13 @@ Developed Python scripts using scipy and scikit-learn to perform machine learnin
 \section{VOLUNTEERING}
 
 \normalsize{\section{2018}}
-{\bf Montana Youth Hostel, Bergen} (\href{http://www.montana.no/}{http://www.montana.no/}) \\
+{\bf Montana Youth Hostel, Bergen} (\href{https://www.montana.no/}{https://www.montana.no/}) \\
 Social Volunteer
 
 \section{PROJECTS}
 
 \normalsize{\section{Tetris}}
-Project to learn Rust. Used SDL and compiled into Wasm. (\href{http://tetris.ael.red/}{http://tetris.ael.red/})
+Project to learn Rust. Used SDL and compiled into Wasm. (\href{https://tetris.ael.red/}{https://tetris.ael.red/})
 
 \normalsize{\section{Starling}}
 A functional programming language implemented in Python. (\href{https://github.com/aelred/starling}{https://github.com/aelred/starling})
@@ -94,11 +122,11 @@ MEng Computer Science with First Class Honours \\
 \section{SKILLS}
 
 \normalsize{\section{Programming languages}}
-Proficient in Java, Python and Rust. \\
-Experience with JavaScript, C\#, C, Kotlin, Haskell and Visual Basic.
+Proficient in Java, Scala, Python and Rust. \\
+Experience with JavaScript, TypeScript, C\#, C, Kotlin, Haskell and Visual Basic.
 
 \normalsize{\section{Technologies}}
-gRPC, protocol buffers, Git, ANTLR, SDL, Tinkerpop, Maven, Travis CI, Jenkins
+gRPC, protocol buffers, Git, ANTLR, SDL, Tinkerpop, Gradle, Maven, CircleCI, Travis CI, Jenkins, FHIR, Terraform, Kubernetes
 
 \end{resume}
 

@@ -109,3 +109,7 @@ sympy-plots-for-*.tex/
 
 # xindy
 *.xdy
+
+**/.terraform/*
+*.tfstate
+*.tfstate.*
