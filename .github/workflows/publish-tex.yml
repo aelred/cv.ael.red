@@ -12,7 +12,7 @@ jobs:
     - name: Build pdf
       run: pdflatex cv_felix_chapman.tex
     - name: Upload cv pdf
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: cv_pdf
         path: cv_felix_chapman.pdf
@@ -23,7 +23,7 @@ jobs:
     
     steps:
       - name: Download cv pdf
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: cv_pdf
       - name: Extract branch name
